@@ -1,0 +1,35 @@
+<head>
+<title> LOGIN </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- Custom Theme files -->
+<link href="/css/login.css" rel="stylesheet" type="text/css" media="all" />
+
+
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+
+</head> 	
+
+
+<div class="login-box">
+  <h2>Login</h2>
+   <% include ./partials/messages %>
+  <form action="/users/login" method= "POST">
+    <div class="user-box">
+      <input type="email" name="email" id="email" required="" />
+      <label>Enter Username</label>
+    </div>
+    <div class="user-box">
+      <input type="password" name="password" id="password" required="" >
+      <label>Enter Password</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-block">Login</button>
+
+
+    <span class="psw"> <a href="#">Forget Password?</a></span>
+    <span class="psw"> <a href="/users/signup">Don't have account? Create Account!</a></span>
+  </form>
+</div>
